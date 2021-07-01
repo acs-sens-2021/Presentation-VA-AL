@@ -1,0 +1,66 @@
+*, ::before, ::after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url(../img/gazon.jpg);
+    background-size:cover;
+    height:100vh;
+}
+
+/* .blocky
+{
+    margin:20px;
+    padding:20px;
+    background-color:#5e1bda;
+} */
+
+.blocky
+{
+    /* position:relative;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%); */
+    margin:20px;
+    padding:20px;
+    background-color:rgba(255,255,255,.6);
+    border-left: white solid 2px;
+    border-top: white solid 2px;
+    border-radius:40px;
+    justify-content: center;
+    align-items:center;
+}
+
+.container
+{
+    height:600px;
+    /* filter:blur(2px); */
+    /* isolation: isolate; */
+    display:grid;
+    grid-template-columns: 3fr 3fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 10px;
+    
+}
+
+.central
+{
+    grid-column-start: 1 span 4;
+}
+
+.tite
+{
+    font-size: 3rem;
+    color:rgb(255, 255, 255);
+    text-shadow: black 2px 2px;
+    /* color: transparent;
+    background-image: url(../img/gazon.jpg);
+    background-size:cover;
+    background-clip: text;
+    -webkit-background-clip:text; */
+    padding-left:60px;
+}
