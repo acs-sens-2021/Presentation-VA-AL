@@ -40,6 +40,7 @@ body
     background-size: cover;
     border-left: white solid 2px;
     border-top: white solid 2px;
+    display:flex;
     border-radius:40px;
     justify-content: center;
     align-items:center;
