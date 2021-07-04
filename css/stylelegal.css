@@ -1,0 +1,85 @@
+*, ::before ::after
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100%;
+    background-image: url(../img/wood2.jpg);
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.container
+{
+width: 80vw;
+background-color: rgba(255,255,255,.1);
+border-radius: 30px;
+padding:20px;
+}
+
+p{
+    text-align: justify;
+    font-size:2rem;
+    font-weight: 900;
+    
+}
+
+.p30
+{
+    text-shadow: white 2px 1px;
+}
+
+.p-btn
+{
+    font-size:1rem;
+    font-weight:900;
+    color:white;
+}
+
+.btn
+{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    bottom: 50px;
+    right:40px;
+    width:60px;
+    height:60px;
+    border: azure 2px solid;
+    border-radius: 30%;
+    background-image:url(../img/gazon.jpg);
+    background-size:cover;
+    cursor:pointer;
+    animation: scale 3s infinite;
+}
+
+@keyframes scale
+{
+    0%{
+        transform: translatey(0);
+    }
+    25%{
+        transform: translatey(20px);
+        transform:rotatex(180deg);
+    }
+    50%{
+        transform: translatey(0);
+    }
+    75%{
+        transform: translatey(-20px);
+        transform:rotatey(180deg);
+    }
+    100%{
+        transform: translatey(0);
+    }
+    
+}
