@@ -173,16 +173,16 @@ p
     25%{
         transform:scale(1.1);
         transform: rotatez(25deg);
-        border: yellow solid 3px;
+        border: rgb(255, 255, 0) solid 6px;
     }
     50%{
         transform:scale(1.2);
-        border: rgb(233, 31, 41) solid 3px;
+        border: rgb(233, 31, 41) solid 5px;
     }
     75%{
         transform:scale(1.1);
         transform: rotatez(-25deg);
-        border: yellow solid 3px;
+        border: rgb(255, 255, 0) solid 10px;
     }
     100%{
         transform:scale(1);
