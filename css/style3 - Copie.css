@@ -1,0 +1,48 @@
+*, ::before, ::after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url(../img/gazon.jpg);
+    background-size:cover;
+    height:100vh;
+}
+
+
+
+
+.container
+{
+    height:800px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.blocky
+{
+    font-size: 4rem;
+    margin:20px;
+    width:900px;
+    height:300px;
+    padding:20px;
+    padding-left:60px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    text-shadow: black 2px 2px;
+    background-image:url(../img/bois2.jpg);
+    background-size: cover;
+    border-left: white solid 2px;
+    border-top: white solid 2px;
+    display:flex;
+    border-radius:40px;
+    justify-content: center;
+    align-items:center;
+}
+

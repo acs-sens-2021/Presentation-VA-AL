@@ -10,39 +10,162 @@ body
     background-image: url(../img/gazon.jpg);
     background-size:cover;
     height:100vh;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
 }
 
 
-
-
+a
+{
+    text-decoration: none;
+    color:white;
+    cursor:pointer;
+    font-size: 2rem;
+}
 .container
 {
-    height:800px;
+    height:600px;
+    width:1100px;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
+}
 
+.row
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowhaut
+{
+    /* margin-right: 100px;
+    padding-right:100px; */
+    height:270px;
+    width:1000px;
+    /* background-color:brown; */
+}
+
+.rowbas
+{
+    height:270px;
+    width:1000px;
+   /* background-color:brown; */
+}
+
+.haut
+{
+width:450px;
+height:240px; 
+
+}
+
+.bas
+{
+    width:700px;
+    height:240px;   
+}
+
+.zoneblc
+{
+    width:400px;
+    height:100px;
+    /* background-color:rgb(61, 23, 230); */
 }
 
 .blocky
 {
     font-size: 3rem;
-    margin:20px;
-    width:900px;
-    height:300px;
-    padding:20px;
-    padding-left:60px;
-    text-align: center;
-    color:rgb(255, 255, 255);
-    text-shadow: black 2px 2px;
-    background-image:url(../img/bois2.jpg);
-    background-size: cover;
-    border-left: white solid 2px;
+    background-image: url(../img/bois2.jpg);
+    background-size:cover;
+    text-shadow: white 2px 2px;
+    border-radius: 50px;
     border-top: white solid 2px;
-    display:flex;
-    border-radius:40px;
-    justify-content: center;
-    align-items:center;
+    border-left:white solid 2px;
+    box-shadow: black 2px 2px 30px;
+      
+   
+    
+
 }
 
+.btn
+{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    bottom: 50px;
+    right:50px;
+    width:80px;
+    height:80px;
+    border: azure 2px solid;
+    border-radius: 40%;
+    background-image:url(../img/gazon.jpg);
+    background-size:cover;
+    cursor:pointer;
+    animation: scale 3s infinite;
+}
+
+.p-btn2
+{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    bottom: 4px;
+    left:40%;
+    width:250px;
+    height:30px;
+    background-color:black ;
+    border-radius:10px;
+}
+
+@keyframes scale
+{
+    0%{
+        transform:scale(1);
+        
+    }
+    25%{
+        transform:scale(1.1);
+        transform: rotatez(25deg);
+        border: yellow solid 3px;
+    }
+    50%{
+        transform:scale(1.2);
+        border: rgb(233, 31, 41) solid 3px;
+    }
+    75%{
+        transform:scale(1.1);
+        transform: rotatez(-25deg);
+        border: yellow solid 3px;
+    }
+    100%{
+        transform:scale(1);
+       
+    }
+
+
+}
+
+
+.p-btn
+{
+    font-size:1.2rem;
+    font-weight:900;
+    color:white;
+}
+
+.p-btn2
+{
+    font-size:1rem;
+    font-weight:900;
+    color:white;
+}

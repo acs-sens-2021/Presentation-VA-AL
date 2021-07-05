@@ -21,36 +21,46 @@ body
 
 .va-al
 {
-    font-size:5rem;
-    letter-spacing:10px;
+    font-size:8rem;
+    letter-spacing:5px;
     font-family: 'Bubblegum Sans', cursive;
+    font-weight:900;
     color: transparent;
     background-image: url(../img/gazon.jpg);
     background-size:unset;
     background-clip: text;
     -webkit-background-clip:text;
+    -webkit-text-stroke: rgb(27, 23, 23) 2px;
 }
 
 .header
 {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
     height:150px;
     width:550px;
-   box-shadow: black 2px 2px 30px;
-    text-align: center;
-   padding:10px;
-   border-radius:20px;
-   background-image:url(../img/bois2.jpg);
-      
+    box-shadow: black 2px 2px 30px;
+    padding:10px;
+    border-radius:20px;
+    background-image:url(../img/bois2.jpg);
+   
 }
+
+
 
 h1
 {
 padding:20px;
 text-align: center;
 color:#7fca2f;
-text-shadow: rgb(0, 0, 0) 2px 1px;
-font-size:3rem;
-
+/* text-shadow: rgb(0, 0, 0) 2px 1px; */
+-webkit-text-stroke: white 2px;
+font-size:5rem;
+background-color: black;
+border-radius:11px;
+align-self: center; /*pas trouver pour wrap word*/
 
 }
 
@@ -70,7 +80,7 @@ font-size:3rem;
 {
     width:500px;
     height:350px;
-    padding:30px;
+    padding:40px;
     background-image:url(../img/bois2.jpg);
     border-radius:20px;
     box-shadow: rgb(0, 0, 0) -4px 4px 20px;
@@ -92,7 +102,7 @@ font-size:3rem;
 {
     transform:scale(0.9);
     transform: rotatez(0deg);
-    transition: all 2s;
+    transition: all 1.5s;
 }
 
 .card.franck:not(:hover)
@@ -108,6 +118,7 @@ font-size:3rem;
     transform: rotatez(15deg);
     transition: all 2s;
 }
+
 p
 {
     
@@ -120,4 +131,78 @@ p
 }
 
 
+.btn
+{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    bottom: 50px;
+    right:50px;
+    width:80px;
+    height:80px;
+    border: azure 2px solid;
+    border-radius: 40%;
+    background-image:url(../img/gazon.jpg);
+    background-size:cover;
+    cursor:pointer;
+    animation: scale 3s infinite;
+}
 
+
+.p-btn2
+{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    bottom: 4px;
+    left:40%;
+    width:250px;
+    height:30px;
+    background-color:black ;
+    border-radius:10px;
+}
+
+@keyframes scale
+{
+    0%{
+        transform:scale(1);
+        
+    }
+    25%{
+        transform:scale(1.1);
+        transform: rotatez(25deg);
+        border: rgb(255, 255, 0) solid 6px;
+    }
+    50%{
+        transform:scale(1.2);
+        border: rgb(233, 31, 41) solid 5px;
+    }
+    75%{
+        transform:scale(1.1);
+        transform: rotatez(-25deg);
+        border: rgb(255, 255, 0) solid 10px;
+    }
+    100%{
+        transform:scale(1);
+       
+    }
+
+
+}
+
+
+.p-btn
+{
+    font-size:1.2rem;
+    font-weight:900;
+    color:white;
+}
+
+.p-btn2
+{
+    font-size:1rem;
+    font-weight:900;
+    color:white;
+}

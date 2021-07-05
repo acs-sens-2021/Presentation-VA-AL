@@ -1,0 +1,103 @@
+*, ::before ::after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body
+{
+    background-image: url(../img/bois2.jpg);
+    background-size: cover;
+}
+
+a
+{
+    text-decoration: none;
+}
+.container
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+}
+
+.cont1
+{
+width:900px;
+height:200px;
+padding: 20px;
+border-radius:20px;
+border-top: white solid 2px;
+background-color:transparent;
+display:flex;
+display:flex;
+justify-content: center;
+align-items: center;
+background-color:rgba(0, 0,0,.6);
+}
+
+.cont2
+{
+    width:900px;
+    height:200px; 
+    padding: 20px; 
+    border-radius:20px;
+    border-top: white solid 2px;
+    display:flex;
+    flex-direction: row;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    background-color:rgba(0, 0,0,.6);
+}
+
+p{
+    font-size:2rem;
+    color:rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 3px 3px;
+}
+
+.p1
+{
+    transform: rotatez(14deg);
+}
+
+.p1:hover
+{
+    transform: rotatez(0deg);
+    transition: 1s;
+}
+
+.p1:not(:hover)
+{
+    transform: rotatez(14deg);
+    transition: 1s;
+}
+
+.p-btn2
+{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    bottom: 4px;
+    left:40%;
+    width:250px;
+    height:30px;
+    background-color:black ;
+    border-radius:10px;
+}
+
+.p-btn2
+{
+    font-size:1rem;
+    font-weight:900;
+    color:white;
+}

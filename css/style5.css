@@ -1,0 +1,134 @@
+*, ::before, ::after
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    background-image: url(../img/bois2.jpg);
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.floux
+{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container
+{
+    width:1100px;
+    height:500px;
+    background-color:rgba(0,0,0,.4);
+    border-radius:30px;
+    border-top:rgba(255,255,255,.7) solid 2px;
+    border-left:rgba(255,255,255,.7) solid 2px;
+}
+
+a
+{
+    color:white;
+    font-size:3rem;
+    font-weight: 900;
+    text-shadow: black 2px 2px 20px;
+}
+
+.ligimpair
+{
+    transform: translatex(0px);
+    animation: lignimpaire 6s infinite;
+}
+
+.ligpair
+{
+    transform: translatex(0);
+    animation: lignimpaire2 6s infinite;
+    
+}
+
+
+.retour
+{
+    height: 30px;
+    font-size:1rem;
+    text-shadow: black 2px 2px;
+}
+
+
+@keyframes lignimpaire
+{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        /* transform: translateX(-50px); */
+        transform: perspective(500px) translateZ(100px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        /* transform: translateX(50px); */
+        transform: perspective(500px) translateZ(-100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes lignimpaire2
+{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        /* transform: translateX(50px); */
+        transform: perspective(500px) translateZ(-100px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        /* transform: translateX(-50px); */
+        transform: perspective(500px) translateZ(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.p-btn2
+{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    bottom: 4px;
+    left:40%;
+    width:250px;
+    height:30px;
+    background-color:black ;
+    border-radius:10px;
+}
+
+.p-btn2
+{
+    font-size:1rem;
+    font-weight:900;
+    color:white;
+}
+
+.g4
+{
+    opacity:.2;
+}
