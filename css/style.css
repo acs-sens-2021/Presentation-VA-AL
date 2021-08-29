@@ -94,7 +94,8 @@ align-self: center; /*pas trouver pour wrap word*/
 
 .card.franck
 {
-    transform: rotatez(-15deg);
+    transform: rotatez(-15deg) ;
+
 }
 
 
@@ -205,4 +206,5 @@ p
     font-size:1rem;
     font-weight:900;
     color:white;
+    z-index: 40;
 }
